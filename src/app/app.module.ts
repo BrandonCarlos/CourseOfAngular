@@ -5,8 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
-import { CriarPensamentoComponent } from './componentes/criar-pensamento/criar-pensamento.component';
+import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
 import { FormsModule } from '@angular/forms';
+import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     CabecalhoComponent,
     RodapeComponent,
     CriarPensamentoComponent,
+    ListarPensamentoComponent,
   ],
   imports: [
     BrowserModule,
