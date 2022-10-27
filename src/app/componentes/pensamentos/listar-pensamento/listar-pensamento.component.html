@@ -3,9 +3,14 @@
     <h2 class="ff-inter">Meu Mural</h2>
     <button routerLink="/criarPensamento" class="botao">Aidiconar pensamento</button><!--routerLink to redirect at localhost:4200/criarPensamento-->
   </header>
-  <div class="mural">
+  <div class="mural" *ngIf="listaPensamentos.length > 0, else semPensamentos"><!--else show what have whitin of #semPensamentos -->
     <div *ngFor="let pensamento of listaPensamentos">
       <app-pensamento [pensamento]="pensamento"></app-pensamento><!-- [pensamento] = is attribute "pensamento" at listar-pensamento.component.ts -->
     </div>
   </div>
 </section>
+<ng-template #semPensamentos>
+  <div class="ff-inter sem-pensamentos">
+    <p>Ainda não há pensamentos cadastrados!</p>
+  </div>
+</ng-template>
