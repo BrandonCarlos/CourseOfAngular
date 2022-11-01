@@ -1,3 +1,4 @@
+import { Pensamento } from './../pensamento';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class PensamentoComponent implements OnInit {
 
-  @Input() pensamento = {//array = "listarPensamento e pensamento" are the same thing, what change is the name only
+  @Input() pensamento: Pensamento = {//array = "listarPensamento e pensamento" are the same thing, what change is the name only
+    id: 0,
     conteudo: 'I love Angular',//therefore why have these fields = conteudo, autoria and modelo in 2 file
     autoria: 'Brandon',
     modelo: 'modelo3'
