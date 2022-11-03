@@ -29,12 +29,6 @@
       "autoria": "Dev Angular",
       "modelo": "modelo3",
       "id": 5
-    },
-    {
-      "conteudo": "Aprendendo Spring Boot",
-      "autoria": "Spring",
-      "modelo": "modelo2",
-      "id": 6
     }
   ]
 }
